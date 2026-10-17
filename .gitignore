@@ -114,4 +114,7 @@ client/public/__manus__/version.json
 
 # Vercel build artifacts (mirrored from dist/index.js by `pnpm build`)
 api/index.js
+
+# Local browser automation scratch (not source)
+.playwright-mcp/
 .vercel

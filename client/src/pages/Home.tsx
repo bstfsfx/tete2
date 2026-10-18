@@ -32,54 +32,54 @@ type Photo = {
 
 const photos: Photo[] = [
   {
-    src: "/images/tete-portrait.webp",
+    src: "/imagestete/tete-portrait.webp",
     alt: "Tete looking up with curious green eyes",
     label: "Little sunshine",
     categories: ["Cute", "At Home", "With Me"],
     position: "center 44%",
   },
   {
-    src: "/images/tete-sleeping.webp",
+    src: "/imagestete/tete-sleeping.webp",
     alt: "Tete curled up for a cozy nap",
     label: "Sleepy Tete",
     categories: ["Sleeping", "Cute"],
     position: "center 54%",
   },
   {
-    src: "/images/tete-playing.webp",
+    src: "/imagestete/tete-playing.webp",
     alt: "Tete playing beside a little toy",
     label: "Play time",
     categories: ["Playing", "Cute", "Special"],
   },
   {
-    src: "/images/tete-window.webp",
+    src: "/imagestete/tete-window.webp",
     alt: "Tete watching sunlight by the window",
     label: "Window watcher",
     categories: ["At Home", "Special"],
   },
   {
-    src: "/images/tete-hero.webp",
+    src: "/imagestete/tete-hero.webp",
     alt: "Tete resting on a soft cream blanket",
     label: "A soft afternoon",
     categories: ["Sleeping", "With Me"],
     position: "center 58%",
   },
   {
-    src: "/images/tete-playing.webp",
+    src: "/imagestete/tete-playing.webp",
     alt: "Tete getting ready for another game",
     label: "Tiny adventures",
     categories: ["Playing", "Special"],
     position: "left center",
   },
   {
-    src: "/images/tete-window.webp",
+    src: "/imagestete/tete-window.webp",
     alt: "Tete keeping an eye on the garden",
     label: "Garden daydreams",
     categories: ["At Home", "Cute"],
     position: "right center",
   },
   {
-    src: "/images/tete-eating.webp",
+    src: "/imagestete/tete-eating.webp",
     alt: "Tete enjoying dinner from a little bowl",
     label: "Dinner with Tete",
     categories: ["Eating", "Cute"],
@@ -100,11 +100,11 @@ const navigation = [
 ] as const;
 
 const stories = [
-  { date: "The Beginning", note: "我們第一次遇見 Tete。", color: "pink", image: "/images/tete-portrait.webp" },
-  { date: "First Days Together", note: "Tete 開始熟悉新家。", color: "lavender", image: "/images/tete-sleeping.webp" },
-  { date: "Becoming Family", note: "Tete 成為家裡的一份子。", color: "violet", image: "/images/tete-portrait.webp" },
-  { date: "Every Day With Tete", note: "我們一起度過每天的小日子。", color: "gold", image: "/images/tete-window.webp" },
-  { date: "More Memories To Come", note: "故事還在繼續。", color: "blue", image: "/images/tete-sleeping.webp" },
+  { date: "The Beginning", note: "我們第一次遇見 Tete。", color: "pink", image: "/imagestete/tete-portrait.webp" },
+  { date: "First Days Together", note: "Tete 開始熟悉新家。", color: "lavender", image: "/imagestete/tete-sleeping.webp" },
+  { date: "Becoming Family", note: "Tete 成為家裡的一份子。", color: "violet", image: "/imagestete/tete-portrait.webp" },
+  { date: "Every Day With Tete", note: "我們一起度過每天的小日子。", color: "gold", image: "/imagestete/tete-window.webp" },
+  { date: "More Memories To Come", note: "故事還在繼續。", color: "blue", image: "/imagestete/tete-sleeping.webp" },
 ];
 
 const dailyRoutine = [
@@ -221,7 +221,7 @@ export default function Home() {
 
       <main>
         <section className="hero" id="home" aria-labelledby="hero-title">
-          <img className="hero-image" src="/images/tete-hero.webp" alt="Tete resting on a soft cream blanket" />
+          <img className="hero-image" src="/imagestete/tete-hero.webp" alt="Tete resting on a soft cream blanket" />
           <div className="hero-wash" />
           <PawStamp className="hero-paw-one" />
           <PawStamp className="hero-paw-two" />
@@ -246,7 +246,7 @@ export default function Home() {
               <span className="tiny-heart">♥</span>
               <div className="profile-content">
                 <div className="portrait-wrap">
-                  <img src="/images/tete-portrait.webp" alt="Portrait of Tete" className="profile-portrait" />
+                  <img src="/imagestete/tete-portrait.webp" alt="Portrait of Tete" className="profile-portrait" />
                   <span className="portrait-crown"><Crown size={25} /></span>
                   <span className="portrait-dot dot-one" /><span className="portrait-dot dot-two" />
                 </div>
@@ -332,15 +332,15 @@ export default function Home() {
               <SectionTitle icon={Heart}>Things Tete Loves</SectionTitle>
               <div className="loves-grid">
                 {[
-                  { label: "Food", src: "/images/tete-eating.webp", position: "center" },
-                  { label: "Toys", src: "/images/tete-playing.webp", position: "right center" },
-                  { label: "Sunlight", src: "/images/tete-window.webp", position: "center" },
-                  { label: "Sofa", src: "/images/tete-sleeping.webp", position: "left center" },
-                  { label: "Boxes", src: "/images/tete-portrait.webp", position: "center 60%" },
-                  { label: "Naps", src: "/images/tete-sleeping.webp", position: "center 60%" },
+                  { label: "Food", src: "/imagestete/tete-eating.webp", position: "center" },
+                  { label: "Toys", src: "/imagestete/tete-playing.webp", position: "right center" },
+                  { label: "Sunlight", src: "/imagestete/tete-window.webp", position: "center" },
+                  { label: "Sofa", src: "/imagestete/tete-sleeping.webp", position: "left center" },
+                  { label: "Boxes", src: "/imagestete/tete-portrait.webp", position: "center 60%" },
+                  { label: "Naps", src: "/imagestete/tete-sleeping.webp", position: "center 60%" },
                 ].map((item) => <button className="love-item" key={item.label} onClick={() => setActivePhoto({ src: item.src, alt: `Tete loves ${item.label.toLowerCase()}`, label: item.label, categories: ["Cute"], position: item.position })}><img src={item.src} alt="" style={{ objectPosition: item.position }} loading="lazy" /><span>{item.label}</span></button>)}
               </div>
-              <button className="human-strip" onClick={() => goTo("pet-tete")}><Heart size={15} /><span>Human</span><img src="/images/tete-portrait.webp" alt="" /><span className="human-hint">Tete’s favorite, always</span></button>
+              <button className="human-strip" onClick={() => goTo("pet-tete")}><Heart size={15} /><span>Human</span><img src="/imagestete/tete-portrait.webp" alt="" /><span className="human-hint">Tete’s favorite, always</span></button>
             </section>
           </div>
 
@@ -362,7 +362,7 @@ export default function Home() {
               <SectionTitle icon={Clock3}>Pet Tete <span className="pink-paw">♥</span></SectionTitle>
               <div className="pet-stage">
                 <div className="pet-hearts"><span>♥</span><span>♡</span><span>♥</span></div>
-                <img className="pet-portrait" src="/images/tete-portrait.webp" alt="Tete is ready for a gentle pet" />
+                <img className="pet-portrait" src="/imagestete/tete-portrait.webp" alt="Tete is ready for a gentle pet" />
                 <div className="pet-speech">Tete says:<br /><strong>{didPet ? "Prrrr! ♥" : "Meow! ♥"}</strong></div>
                 <span className="pet-sparkle pet-sparkle-one">✦</span><span className="pet-sparkle pet-sparkle-two">✧</span>
               </div>
@@ -374,7 +374,7 @@ export default function Home() {
               <SectionTitle icon={Cat}>Tete’s Favorite Quote</SectionTitle>
               <blockquote>“Some companions<br />don’t need words.<br />They just need to be there.”</blockquote>
               <PawPrint className="quote-paw" size={19} />
-              <div className="quote-photo"><img src="/images/tete-window.webp" alt="Tete by a sunny window" /><span>Tete ♡</span></div>
+              <div className="quote-photo"><img src="/imagestete/tete-window.webp" alt="Tete by a sunny window" /><span>Tete ♡</span></div>
               <span className="quote-flower">✿</span>
             </section>
           </div>

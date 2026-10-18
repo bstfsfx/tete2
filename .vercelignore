@@ -1,0 +1,23 @@
+# Vercel ignore — controls which files get uploaded on vercel deploy.
+# Unlike .gitignore, this is applied during the upload step, after build.
+# Pattern syntax matches .gitignore.
+#
+# Reason for keeping this file: I want the website's static assets to ship
+# but exclude local photo-management artifacts that ended up under
+# client/public/ from a photo-import tool. These have no path on the live UI
+# and would otherwise be reachable at predictable URLs by anyone on the
+# internet.
+
+# Photo library dump — raw iPhone originals, including Live Photo .MOV files
+client/public/imagebank/
+
+# Zip archive of the same (or similar) image set
+client/public/images.zip
+
+# Original raw photos in client/public/imagestete/ — keep the transcoded
+# .webp versions, but the source HEIC / JPG / jpeg originals never need to
+# be served from production.
+client/public/imagestete/*.HEIC
+client/public/imagestete/*.JPG
+client/public/imagestete/*.jpeg
+client/public/imagestete/*.jpg
